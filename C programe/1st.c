@@ -14,4 +14,6 @@ else if(a!=b){
     sum=a+b;
     printf("Sum is %d",sum);
 }
+
 }
+

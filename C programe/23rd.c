@@ -6,11 +6,15 @@ int main()
     scanf("%d%d%d",&a,&b,&c);
     if((c=a+b)&&(a=b+c)&&(b=c+a))
 
-        printf("1");
+       {
+            printf("1");
+       }
 
 
     else
-        printf("0");
+      {
+            printf("0");
+      }
 
 }
 

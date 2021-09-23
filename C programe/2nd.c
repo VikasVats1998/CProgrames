@@ -11,4 +11,5 @@ int main()
         result=result*3;
         printf("\nAbsolute difference is %d",result);
     }
+    
 }
