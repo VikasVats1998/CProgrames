@@ -1,20 +1,20 @@
 #include<stdio.h>
 int main(){
-    int array[100],i,j,n;
-    printf("Enter the no of array elements\n");
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
+    int array[100],i,j;
+    printf("Enter the array elements\n");
+    
+    for(i=0;i<5;i++)
     {
         scanf("%d",&array[i]);
     }
     printf("\nArray in forward order");
-    for(i=0;i<n;i++)
+    for(i=0;i<5;i++)
     {
-        printf("%d",&array[i]);
+        printf("%d",array[i]);
     }
     printf("\nArray in reverse order");
-    for(j=n;j>0;j--)
-    {
-        printf("%d",&array[j]);
+    for(i=4;i>=0;i--){
+        printf("%d",array[i]);
     }
+   
 }

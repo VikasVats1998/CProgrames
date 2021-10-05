@@ -1,18 +1,20 @@
 #include<stdio.h>
 int main(){
-    int array[100],i,n,a2[2],j;
-    printf("Enter the no of array elements");
+    int array[100],i,n;
+    printf("Enter thee size of array : ");
     scanf("%d",&n);
-    printf("Enter the array elements");
-    for(i=0;i<n;i++)
-    {
+    printf("Enter the array elements \n");
+    for(i=0;i<n;i++){
         scanf("%d",&array[i]);
     }
-    a2[0]=array[0];
-    a2[1]=array[n-1];
-    for(j=0;j<2;j++)
-    {
-        printf("%5d",a2[j]);
+    printf("\nYour array \n");
+    for(i=0;i<n;i++){
+        printf("%4d",array[i]);
+    }
+    int new[]={array[0],array[n-1]};
+    printf("\nNew array : \n");
+    for(i=0;i<2;i++){
+        printf("%4d",new[i]);
     }
 
     
