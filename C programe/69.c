@@ -1,6 +1,6 @@
 #include<stdio.h>
 int main(){
-    int array[100],i,n;
+    int array[100],i,n,a2[100],m;
     printf("Enter the size of array : ");
     scanf("%d",&n);
     printf("\nEnter the array elements\n");
@@ -12,9 +12,19 @@ int main(){
         printf("%d",array[i]);
     }
     printf("New array :");
+      
     for(i=0;i<n;i++){
-        printf("%4d",array[i]);
+        
         if(array[i]==5)
-        break;
+        {
+            m=i;
+            break;
+        }
+        else{
+            a2[i]=array[i];
+        }
+    }
+    for(i=0;i<m;i++){
+        printf("%2d",a2[i]);
     }
 }
